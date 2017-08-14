@@ -1,0 +1,94 @@
+﻿@model Egharpay.Models.ApartmentViewModel
+<div class="form-control-required-example"> = Required</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Name, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Name, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Name, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Address1, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Address1, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Address1, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Address2, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Address2, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Address2, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Address3, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Address3, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Address3, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Address4, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Address4, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Address4, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.CityId, new {@class = "control-label col-md-3 col-sm-3 col-xs-12"})
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.DropDownListFor(model => model.Apartment.CityId, Model.Cities,"Select City", new {@class = "form-control col-md-7 col-xs-12"})
+        @Html.ValidationMessageFor(model => model.Apartment.CityId, "", new {@class = "help-block"})
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.StateId, new {@class = "control-label col-md-3 col-sm-3 col-xs-12"})
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.DropDownListFor(model => model.Apartment.StateId, Model.States,"Select State", new {@class = "form-control col-md-7 col-xs-12"})
+        @Html.ValidationMessageFor(model => model.Apartment.StateId, "", new {@class = "help-block"})
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Pincode, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Pincode, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Pincode, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.RegistrationNumber, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.RegistrationNumber, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.RegistrationNumber, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.MunicipalCorporationId, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.DropDownListFor(model => model.Apartment.MunicipalCorporationId, Model.MunicipalCorporations, "Select Municipal Corporation", new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.MunicipalCorporationId, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.NumberOfMembers, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.NumberOfMembers, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.NumberOfMembers, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.EmailId, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.EmailId, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.EmailId, "", new { @class = "help-block" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Apartment.Telephone, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(model => model.Apartment.Telephone, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(model => model.Apartment.Telephone, "", new { @class = "help-block" })
+    </div>
+</div>
